@@ -44,7 +44,7 @@ export default {
 
   mounted() {
     axios
-      .get("https://vue-blogs-beta.vercel.app/bolg/" + this.$route.params.id)
+      .get("/data.json/bolg/" + this.$route.params.id)
       .then((res) => {
         this.blog = res.data;
       });
