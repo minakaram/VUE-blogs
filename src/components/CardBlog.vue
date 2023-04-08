@@ -1,7 +1,7 @@
 <template>
   <div class="card-blog">
     <div class="card-img">
-      <img :src=data.iamge alt="" />
+      <img :src="data.iamge" alt="" />
     </div>
     <div class="card-content">
       <h2 class="card-title">{{ data.title }}</h2>
