@@ -40,7 +40,9 @@ export default {
   methods: {
     addBlog(page) {
       axios
-        .get(`https://blog-json-server-omega.vercel.app/bolg?_page=${page}&_limit=6`)
+        .get(
+          `https://blog-json-server-omega.vercel.app/bolg?_page=${page}&_limit=6`
+        )
         .then((res) => {
           let allData = this.blogs ? this.blogs.concat(res.data) : res.data;
           this.blogs = this.page === 1 ? res.data : allData;
@@ -65,7 +67,7 @@ button {
   text-align: center;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(141, 7, 130);
 }
 </style>

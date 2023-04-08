@@ -5,7 +5,7 @@
     </AppHeader>
     <div class="blog-container">
       <div class="blog-img">
-        <img :src="`../${blog.image}`" alt="" />
+        <img :src="`${blog.image}`" alt="" />
       </div>
       <h2>{{ blog.title }}</h2>
       <p class="blog-summary">
