@@ -44,7 +44,10 @@ export default {
 
   mounted() {
     axios
-      .get("/data.json/bolg/" + this.$route.params.id)
+      .get(
+        "https://blog-json-server-omega.vercel.app/bolg/" +
+          this.$route.params.id
+      )
       .then((res) => {
         this.blog = res.data;
       });
@@ -53,7 +56,6 @@ export default {
 </script>
 
 <style scoped>
-
 img {
   width: 100%;
   height: 400px;
