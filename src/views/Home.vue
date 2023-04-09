@@ -42,7 +42,7 @@ export default {
     addBlog(page) {
       axios
         .get(
-          `https://blog-json-server-omega.vercel.app/bolg?_page=${page}&_limit=6`
+          `https://blog-json-server-omega.vercel.app/bolg?_page=${page}&_limit=12`
         )
         .then((res) => {
           let allData = this.blogs ? this.blogs.concat(res.data) : res.data;
@@ -54,7 +54,7 @@ export default {
       this.page++;
       this.addBlog(this.page);
     },
-  },
+  }
 };
 </script>
 
