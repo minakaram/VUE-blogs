@@ -5,14 +5,9 @@
     </AppHeader>
     <div class="container" v-if="blogs">
       <CardBlog v-for="blog in blogs" :key="blog.id" :data="blog" />
-
     </div>
     <div class="btn-class">
-      <button
-        type="button"
-        onclick="loadMore">
-        Load more
-      </button>
+      <button type="button" onclick="loadMore">Load more</button>
       <button
         type="button"
         onclick="loadMore"
@@ -65,6 +60,15 @@ export default {
 </script>
 
 <style>
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 50px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 button {
   color: white;
   background-color: rgb(102, 5, 94);
@@ -76,5 +80,9 @@ button {
 
 button:hover {
   background-color: rgb(141, 7, 130);
+}
+.btn-class {
+  text-align: center;
+  margin-bottom: 40px;
 }
 </style>
