@@ -17,17 +17,6 @@ body {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
 }
-.container {
-  width: 85%;
-  margin: auto;
-  padding: 50px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
-.btn-class {
-  text-align: center;
-  margin-bottom: 40px;
-}
+
 </style>

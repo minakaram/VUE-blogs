@@ -7,14 +7,14 @@
       <CardBlog v-for="blog in blogs" :key="blog.id" :data="blog" />
     </div>
     <div class="btn-class">
-      <button type="button" onclick="loadMore">Load more</button>
-      <button
+      <button type="button" @click="loadMore">Load more</button>
+      <!-- <button
         type="button"
         onclick="loadMore"
         v-if="blogs && totalCount && blogs.length < totalCount"
       >
         Load more
-      </button>
+      </button> -->
     </div>
   </div>
 </template>
