@@ -8,13 +8,13 @@
     </div>
     <div class="btn-class">
       <button type="button" @click="loadMore">Load more</button>
-      <!-- <button
+      <button
         type="button"
-        onclick="loadMore"
+        @click="loadMore"
         v-if="blogs && totalCount && blogs.length < totalCount"
       >
         Load more
-      </button> -->
+      </button>
     </div>
   </div>
 </template>
