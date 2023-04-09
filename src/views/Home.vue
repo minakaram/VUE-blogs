@@ -5,14 +5,14 @@
     </AppHeader>
     <div class="container" v-if="blogs">
       <CardBlog v-for="blog in blogs" :key="blog.id" :data="blog" />
-      <button
-        type="button"
-        onclick="loadMore"
-      >
-        Load more
-      </button>
+
     </div>
     <div class="btn-class">
+      <button
+        type="button"
+        onclick="loadMore">
+        Load more
+      </button>
       <button
         type="button"
         onclick="loadMore"
