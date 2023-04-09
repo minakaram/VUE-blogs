@@ -53,7 +53,6 @@ export default {
     loadMore() {
       this.page++;
       this.addBlog(this.page);
-      console.log(this.totalCount);
     },
   },
 };
