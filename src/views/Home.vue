@@ -8,7 +8,6 @@
       <button
         type="button"
         onclick="loadMore"
-        v-if="blogs && totalCount && blogs.length < totalCount"
       >
         Load more
       </button>
