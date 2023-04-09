@@ -7,7 +7,6 @@
       <CardBlog v-for="blog in blogs" :key="blog.id" :data="blog" />
     </div>
     <div class="btn-class">
-      <button type="button" @click="loadMore">Load more</button>
       <button
         type="button"
         @click="loadMore"
@@ -42,7 +41,7 @@ export default {
     addBlog(page) {
       axios
         .get(
-          `https://blog-json-server-omega.vercel.app/bolg?_page=${page}&_limit=12`
+          `https://blog-json-server-omega.vercel.app/bolg?_page=${page}&_limit=6`
         )
         .then((res) => {
           let allData = this.blogs ? this.blogs.concat(res.data) : res.data;
